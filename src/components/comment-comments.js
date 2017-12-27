@@ -11,7 +11,7 @@ class Comment extends React.Component {
     return (
       <div className="comment">
         <div class="commenterImage">
-          <img src={this.props.image} />
+          <img src={this.props.image} className="userImage" alt="user" />
         </div>
         <div class="commentText">
           <h2 className="commentAuthor">{this.props.author}</h2>

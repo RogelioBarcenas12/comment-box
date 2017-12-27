@@ -6,6 +6,7 @@ import CommentBox from "./components/comment-box";
 //temp imports
 import Emmett from "./assets/emmet_brown.jpg";
 import Rick from "./assets/rick_sanchez.jpg";
+import Doctor from "./assets/tardis-doctor-who.png";
 
 class App extends Component {
   render() {
@@ -21,26 +22,29 @@ class App extends Component {
         image: Rick,
         date: "December 28th, 2017 @ 3:16am",
         text: "Two words...portal gun...douchbag!"
+      },
+      {
+        author: "Doctor Who",
+        image: Doctor,
+        date: "December 28th, 2017 @ 3:20am",
+        text: "My TARDIS is dimensionally transcendental."
+      },
+      {
+        author: "Rick Sanchez",
+        image: Rick,
+        date: "December 28th, 2017 @ 3:22am",
+        text: "F#$% you, mother F#$%#%! I'll be seeing you soon!"
       }
     ];
     return (
-      <div>
+      <div className="App">
         <div>
-          <Navbar />
+          <Navbar number={comments.length} />
         </div>
         <div>
           <CommentBox comments={comments} />
         </div>
       </div>
-      // <div className="App">
-      //   <header className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <h1 className="App-title">Welcome to React</h1>
-      //   </header>
-      //   <p className="App-intro">
-      //     To get started, edit <code>src/App.js</code> and save to reload.
-      //   </p>
-      // </div>
     );
   }
 }
