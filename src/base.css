@@ -1,0 +1,225 @@
+.commentBox {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  min-height: 600px;
+  text-align: left;
+}
+
+body {
+  background: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 30px;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+  font-size: 12px;
+  margin: 0 2px;
+  padding: 0 5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 25px;
+}
+
+h1 {
+  border-bottom: 1px solid rgb(58, 56, 56);
+  font-size: 2.5em;
+}
+
+.commentFormdiv {
+  margin: auto;
+  margin-top: 30px; /*Controls space between comments and saySomethingBox border line*/
+  justify-content: flex-start;
+  border-top: 1px solid rgb(58, 56, 56);
+}
+
+.commentForm {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Comment in comments-comments.js*/
+.commenterImage {
+  width: 30px;
+  margin-right: 5px;
+  height: 100%;
+  float: left;
+}
+.commenterImage img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.sub-text {
+  color: #aaa;
+  font-family: verdana;
+  font-size: 11px;
+}
+/*Comment in comments-comments.js*/
+
+.saySomethingBox {
+  width: 300px;
+}
+
+h2 {
+  border-bottom: 1px solid #eee;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+p,
+ul {
+  margin: 15px 0;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+/* Dropdown Button */
+.dropdown {
+  background: black;
+  padding: 5px;
+  width: 200px;
+  height: 30px;
+  margin: 0px;
+  position: relative;
+  display: inline-block;
+
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+/* .dropdown:hover,
+.dropdown:focus {
+  background-color: #3e8e41;
+} */
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content {
+  background: black;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content option {
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: rgb(65, 65, 78);
+  border: 1px solid silver;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.navbar-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /*border: 1px solid silver;*/
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* .wrap li {
+  background: rgb(149, 149, 204);
+} */
+
+.navbar-item {
+  background: black;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
