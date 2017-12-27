@@ -2,6 +2,7 @@ import React from "react";
 import "../base.css";
 
 class CommentForm extends React.Component {
+  //TODO
   constructor() {
     super();
     this.state = {
@@ -12,12 +13,6 @@ class CommentForm extends React.Component {
     return (
       <div class="commentFormdiv">
         <form className="commentForm" onSubmit={this.handleSubmit}>
-          {/* <input
-          type="text"
-          placeholder="Your name"
-          value={this.state.author}
-          onChange={this.handleAuthorChange}
-        /> */}
           <input
             type="text"
             class="saySomethingBox"

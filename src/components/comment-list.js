@@ -1,26 +1,23 @@
 import React from "react";
+import { map } from "ramda";
 import Comment from "./comment-comments";
-import Emmett from "./emmet_brown.jpg";
-import Rick from "./rick_sanchez.jpg";
 
 class CommentList extends React.Component {
   constructor(props) {
-    super(props);
+    super(); //only pass in props if accessing in "this.state" as this.props.whatever
     this.state = {
       default: "comment-list"
     };
   }
   render() {
-    return (
-      <div className="commentList">
-        <Comment author={"Emmett Brown"} image={Emmett}>
-          I invented time travel and I did it in style!
+    let List = map(n => {
+      return (
+        <Comment author={n.author} image={n.image} date={n.date}>
+          {n.text}
         </Comment>
-        <Comment author={"Rick Sanchez"} image={Rick}>
-          Two words...portal gun...douchbag!
-        </Comment>
-      </div>
-    );
+      );
+    }, this.props.comments);
+    return <div className="commentList">{List}</div>;
   }
 }
 

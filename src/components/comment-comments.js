@@ -4,7 +4,7 @@ class Comment extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      children: "comment-child"
+      default: "comment"
     };
   }
   render() {
@@ -15,7 +15,7 @@ class Comment extends React.Component {
         </div>
         <div class="commentText">
           <h2 className="commentAuthor">{this.props.author}</h2>
-          <span class="date sub-text">on Decmber 27th, 2017</span>
+          <span class="date sub-text">{this.props.date}</span>
         </div>
         {this.props.children}
       </div>
